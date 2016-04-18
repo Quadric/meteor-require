@@ -1,62 +1,20 @@
 {
-  "private": true,
+  "name": "babel-register",
+  "version": "6.7.2",
+  "description": "babel require hook",
   "license": "MIT",
-  "devDependencies": {
-    "async": "^1.5.0",
-    "babel": "5.8.21",
-    "browserify": "^11.2.0",
-    "bundle-collapser": "^1.2.1",
-    "chai": "^2.2.0",
-    "chalk": "1.1.1",
-    "codecov.io": "^0.1.6",
-    "derequire": "^2.0.2",
-    "es5-shim": "^4.1.7",
-    "kcheck": "^2.0.0",
-    "fs-readdir-recursive": "^0.1.2",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^5.3.0",
-    "gulp-newer": "^1.0.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.5",
-    "istanbul": "^0.3.5",
-    "lerna": "^1.0.0",
+  "repository": "https://github.com/babel/babel/tree/master/packages/babel-register",
+  "author": "Sebastian McKenzie <sebmck@gmail.com>",
+  "main": "lib/node.js",
+  "browser": "lib/browser.js",
+  "dependencies": {
+    "babel-core": "^6.7.2",
+    "babel-runtime": "^5.0.0",
+    "core-js": "^2.1.0",
+    "home-or-tmp": "^1.0.0",
     "lodash": "^3.10.0",
-    "matcha": "^0.6.0",
     "mkdirp": "^0.5.1",
-    "mocha": "2.2.0",
-    "output-file-sync": "^1.1.1",
-    "pad": "^1.0.0",
     "path-exists": "^1.0.0",
-    "progress": "^1.1.8",
-    "readline-sync": "^1.2.19",
-    "rimraf": "^2.4.3",
-    "semver": "^5.0.0",
-    "shelljs": "^0.5.1",
-    "through2": "^2.0.0",
-    "uglify-js": "^2.4.16"
-  },
-  "babel": {
-    "ignore": [
-      "packages/babel-cli/src/babel-plugin/templates"
-    ],
-    "stage": 0,
-    "loose": [
-      "all"
-    ],
-    "blacklist": [
-      "es6.tailCall"
-    ],
-    "optional": [
-      "flow",
-      "optimisation.flow.forOf",
-      "runtime"
-    ],
-    "env": {
-      "test": {
-        "auxiliaryCommentBefore": "istanbul ignore next"
-      }
-    },
-    "breakConfig": true
+    "source-map-support": "^0.2.10"
   }
 }
